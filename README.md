@@ -128,4 +128,32 @@ The dataset contains information such as:
 - REST API integration
 
 ---
+## 📸 Project Screenshots
 
+### 🏠 Landing Page
+
+![Landing Page](screenshots/frontpage.png)
+
+---
+
+### 📊 Prediction Page
+
+![Prediction Page](screenshots/predict.png)
+
+---
+
+### 📈 Prediction History
+
+![Prediction History](screenshots/prediction_history.png)
+
+---
+
+### 🎯 Prediction Result
+
+![Prediction Result](screenshots/result.png)
+
+---
+
+### 📋 Detailed Prediction Result
+
+![Detailed Result](screenshots/result2.png)
