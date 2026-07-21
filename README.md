@@ -149,11 +149,11 @@ The dataset contains information such as:
 ---
 
 ### 🎯 Prediction Result
+![Detailed Result](screenshots/result2.png)
 
-![Prediction Result](screenshots/result.png)
 
 ---
 
 ### 📋 Detailed Prediction Result
+![Prediction Result](screenshots/result.png)
 
-![Detailed Result](screenshots/result2.png)
