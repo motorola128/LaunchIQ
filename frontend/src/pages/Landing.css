@@ -1,0 +1,285 @@
+/* ==========================================================================
+   Landing Page Styles (Clean & Flat, Built for your index.css layout)
+   ========================================================================== */
+
+.lp-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  box-sizing: border-box;
+  text-align: left; /* Resolves any inherited centering issues */
+}
+
+/* Header Adjustments */
+.lp-header {
+  padding: 40px 0 20px;
+}
+
+.lp-logo {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+/* Hero Base Layout */
+.lp-hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 60px 0;
+}
+
+/* Left Content Block */
+.lp-content {
+  flex: 1;
+  max-width: 520px;
+}
+
+.lp-badge {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 16px;
+  border-radius: 100px;
+  background-color: var(--accent-bg);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+  margin-bottom: 24px;
+}
+
+.lp-headline {
+  font-size: 48px;
+  line-height: 110%;
+  letter-spacing: -1.5px;
+  margin: 0 0 24px 0;
+}
+.lp-cta-container {
+  font-size: 25px;
+  line-height: 160%;
+  color: var(--text);
+  margin-bottom: 32px;
+  margin-top: 60px;
+  padding-top: 60px;
+}
+.lp-accent-text {
+  color: var(--accent);
+}
+
+.lp-description {
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--text);
+  margin-bottom: 40px;
+}
+
+/* Clean Accent CTA Button */
+.lp-button {
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 14px 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.lp-button:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+
+/* Right Visual Block (Premium Dashboard Card) */
+.lp-visual {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 500px;
+}
+
+.ui-card-mockup {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.12);
+  overflow: hidden;
+}
+
+/* Mockup Internal Styles */
+.ui-header {
+  background: linear-gradient(135deg, #f0f9ff, #f5f3ff);
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.ui-nav-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #64748b;
+}
+
+.ui-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.dot-r { background-color: #ef4444; }
+.dot-y { background-color: #eab308; }
+.dot-g { background-color: #22c55e; }
+
+.ui-body {
+  padding: 32px;
+  background: #ffffff;
+}
+
+.ui-metric-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #94a3b8;
+  margin-bottom: 24px;
+}
+
+.ui-stats-grid {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.ui-circles {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ui-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 4px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-cyan {
+  border-color: rgba(6, 182, 212, 0.15);
+  border-top-color: #06b6d4;
+}
+
+.circle-slate {
+  border-color: #27272a;
+  border-left-color: #a1a1aa;
+}
+
+.circle-text {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: #ffffff;
+}
+
+/* Horizontal Metric Bars */
+.ui-bars {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ui-bar-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.bar-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #94a3b8;
+}
+
+.bar-track {
+  width: 100%;
+  height: 6px;
+  background-color: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.fill-1 { background-color: #06b6d4; width: 70%; }
+.fill-2 { background-color: #64748b; width: 40%; }
+.fill-3 { background-color: #475569; width: 55%; }
+
+/* Sparkline Grid Footer */
+.ui-footer-chart {
+  margin-top: 32px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+  height: 16px;
+}
+
+.chart-bar {
+  width: 20px;
+  height: 100%;
+  background-color: #06b6d4;
+  border-radius: 2px;
+}
+
+.b1 { opacity: 1; }
+.b2 { opacity: 0.8; }
+.b3 { opacity: 0.6; }
+.b4 { opacity: 0.4; }
+.b5 { opacity: 0.2; }
+
+.lp-footer {
+  padding: 40px 0;
+}
+
+/* ==========================================================================
+   Responsive Adaptations (Un-nested for strict rendering)
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .lp-wrapper {
+    padding: 0 24px;
+  }
+  
+  .lp-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    padding: 40px 0;
+  }
+  
+  .lp-content, .lp-visual {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .lp-headline {
+    font-size: 36px;
+  }
+}

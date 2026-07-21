@@ -1,0 +1,248 @@
+.dashboard-container {
+  min-height: 100vh;
+  padding: 30px;
+  background: linear-gradient(135deg, #f8fafc, #f0f9ff, #f5f3ff);
+  color: #1e293b;
+}
+
+/* layout is a single-column dashboard without a sidebar */
+
+/* Header */
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dashboard-header h1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 2rem;
+  color: #0f172a;
+}
+
+.dashboard-header p {
+  color: #64748b;
+}
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 120ms ease;
+}
+
+.primary-btn {
+  background: #3b82f6;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+}
+
+.secondary-btn {
+  background: #f1f5f9;
+  color: #1e293b;
+  border: 1px solid #cbd5e1;
+}
+
+.secondary-btn:hover {
+  background: #e2e8f0;
+  border-color: #94a3b8;
+}
+
+.logout-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  background: #ef4444;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 120ms ease, transform 120ms ease;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+}
+
+.logout-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}
+
+/* Welcome */
+
+.welcome-banner {
+  background: linear-gradient(135deg, rgba(59,130,246,0.1), rgba(139,92,246,0.05));
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  border: 1px solid rgba(59,130,246,0.2);
+}
+
+.welcome-banner p {
+  color: #475569;
+}
+
+/* Cards */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stats-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: .3s;
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.12);
+  border-color: #cbd5e1;
+}
+
+.stats-card h3 {
+  margin-top: 15px;
+  color: #64748b;
+}
+
+.stats-card h2 {
+  margin-top: 10px;
+  font-size: 2rem;
+  color: #0f172a;
+}
+
+.success {
+  border-left: 5px solid #10b981;
+}
+
+.danger {
+  border-left: 5px solid #ef4444;
+}
+
+.score {
+  border-left: 5px solid #06b6d4;
+}
+
+/* AI Insight */
+
+.insight-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.section-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.insight-card ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.insight-card li {
+  margin-bottom: 10px;
+  color: #000;
+}
+
+/* Charts */
+
+.chart-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+/* Quick Actions */
+
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
+}
+
+.action-card {
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 120ms ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+  background: rgba(99,102,241,0.15);
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+.action-card h3 {
+  margin-top: 10px;
+  color: #e2e8f0;
+}
+
+.action-card p {
+  color: #cbd5e1;
+}
+
+.action-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 1024px) {
+  .dashboard-container {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-sidebar {
+    min-height: auto;
+  }
+}
+
+/* Loading */
+
+.dashboard-loading {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,215 @@
+/* ==========================================================================
+   1. Global Variables & Base Root Styles
+   ========================================================================== */
+:root {
+
+  /* Colors */
+  --text: #1e293b;
+  --text-h: #0f172a;
+
+  --bg: #f8fafc;
+  --card-bg: #ffffff;
+
+  --border: rgba(15,23,42,0.08);
+
+  --code-bg: #f1f5f9;
+
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+
+  --secondary: #8b5cf6;
+  --cyan: #06b6d4;
+
+  --accent-bg: rgba(59,130,246,0.1);
+  --accent-border: rgba(59,130,246,0.3);
+
+  --social-bg: rgba(59,130,246,0.05);
+
+  --shadow:
+    0 10px 25px rgba(0,0,0,0.08);
+
+  /* Fonts */
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+
+  color: var(--text);
+  background: var(--bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================================
+   2. Dark Mode Overrides
+   ========================================================================== */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --text: #24292e;
+    --text-h: #24292e;
+    --bg: #f9f9f4;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #2b3036;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: #2e303a;
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow: rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  } */
+/* 
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  } */
+
+
+/* ==========================================================================
+   3. Global Element Resets
+   ========================================================================== */
+body {
+  margin: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f8fafc,
+      #f0f9ff,
+      #f5f3ff
+    );
+
+  color: var(--text);
+
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* h1, h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-h);
+  font-family: var(--heading);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+  
+  color: #cbd5e1;
+
+}
+
+code, .counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
+
+/* ==========================================================================
+   4. Responsive Media Queries (Un-nested)
+   ========================================================================== */
+@media (max-width: 1024px) {
+  :root {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6366f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4f46e5;
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+
+  background: var(--accent);
+
+  color: white;
+
+  padding: 12px 18px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: var(--accent-hover);
+
+  transform: translateY(-2px);
+}
+

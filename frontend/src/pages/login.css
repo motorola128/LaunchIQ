@@ -1,0 +1,137 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 80vh;
+  margin: 40px;
+  padding: 0;
+  text-align: center;
+  
+}
+
+.login-header h2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-header h2 svg {
+  display: block;
+}
+
+.login-wrapper {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 34px 30px 30px;
+  box-sizing: border-box;
+  text-align: center;
+  width: min(460px, 100%);
+  margin: 40px auto;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+.login-wrapper h2 {
+  color: #111;
+}
+
+.login-wrapper form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+  gap: 10px;
+}
+
+.login-email,
+.login-password {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.login-email label,
+.login-password label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #111;
+}
+
+.l-email-input,
+.l-password-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.92);
+  width: 100%;
+}
+
+.l-email-input input,
+.l-password-input input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #111;
+  width: 100%;
+  font-size: 14px;
+}
+
+.l-email-input input::placeholder,
+.l-password-input input::placeholder {
+  color: #7a7a7a;
+}
+
+.login-button {
+  width: 75%;
+  margin-top: 40px;
+  text-align: center;
+  align-self: center;
+}
+
+.login-wrapper button {
+  width: 100%;
+  padding: 12px 16px;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(59,130,246,0.15);
+  transition: background-color 120ms ease, transform 120ms ease;
+}
+
+.login-wrapper button:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+}
+
+.login-wrapper button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
+}
+
+.login-footer {
+  margin-top: 16px;
+  font-size: 18px;
+  color: #111;
+}
+
+.login-footer a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-footer a:hover {
+  color: #2563eb;
+}

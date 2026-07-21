@@ -1,0 +1,158 @@
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 80vh;
+
+  margin:40px ;
+  padding:0;
+  text-align: center;
+}
+
+
+.signup-wrapper {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px 30px 30px;
+  box-sizing: border-box;
+  text-align: center;
+  width: min(520px, 100%);
+  margin: 40px auto;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+.signup-wrapper h2 {
+  color: #111;
+}
+
+.signup-header h2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.signup-header h2 svg {
+  display: block;
+  
+}
+.s-username-input, .s-email-input, .s-password-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.92);
+}
+
+/* Ensure the inner input field is plain (no black background) */
+.s-username-input input,
+.s-email-input input,
+.s-password-input input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #111;
+  width: 100%;
+  font-size: 14px;
+}
+
+/* placeholder color */
+.s-username-input input::placeholder,
+.s-email-input input::placeholder,
+.s-password-input input::placeholder {
+  color: #7a7a7a;
+}
+
+/* Override Chrome autofill background */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(255,255,255,0.92) inset;
+  box-shadow: 0 0 0px 1000px rgba(255,255,255,0.92) inset;
+  -webkit-text-fill-color: #111;
+}
+.s-username-input, .s-email-input, .s-password-input {
+ text-align: left;
+}
+
+/* Make form and labels left-aligned while keeping the card centered */
+.signup-wrapper form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* ensure children take full width */
+  text-align: left;
+}
+
+.signup-username,
+.signup-email,
+.signup-password {
+  width: 100%;
+}
+
+.signup-username label,
+.signup-email label,
+.signup-password label {
+  display: block;
+  margin-bottom: 6px;
+  color: #111;
+  font-weight: 600;
+}
+
+/* Compact spacing between fields */
+.signup-username,
+.signup-email,
+.signup-password {
+  margin-bottom: 10px; /* reduce vertical gap */
+}
+
+/* Link to login: black by default, gray on hover */
+.signup-wrapper a {
+  color: #3b82f6;
+  text-decoration: none;
+  margin-top: 8px;
+  display: inline-block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.signup-wrapper a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+/* Primary submit button styling */
+.signup-wrapper button {
+  width: 75%;
+  padding: 12px 16px;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(59,130,246,0.15);
+  transition: background-color 120ms ease, transform 120ms ease;
+}
+.signup-wrapper button:hover {
+  background: #2563eb;
+  transform: translateY(-3px);
+}
+.signup-wrapper button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
+}
+.signup-login-link {
+  margin-top: 16px;
+  font-size: 14px;
+}
+.signup-button{
+    margin-top: 20px;
+    text-align: center;
+}
