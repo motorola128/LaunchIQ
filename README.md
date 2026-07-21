@@ -1,106 +1,163 @@
 # 🚀 LaunchIQ – AI-Powered Product Launch Decision Intelligence Platform
 
-LaunchIQ is an AI-powered business intelligence platform that helps businesses evaluate product launch readiness by predicting the probability of product success before launch and monitoring product performance after launch.
-
-The platform combines machine learning, explainable AI, sentiment analysis, and interactive dashboards to support data-driven product launch decisions.
+LaunchIQ is an AI-powered web application that predicts the success probability of a product **before launch** using machine learning. The platform provides explainable predictions, category-based benchmarking, and optimization recommendations to support data-driven product launch decisions.
 
 ---
 
 ## ✨ Features
 
-- 🎯 Predict product launch success using Machine Learning
-- 📊 Product Success Probability Score
-- 🤖 Ensemble models (XGBoost & Random Forest)
-- 📈 Interactive Business Intelligence Dashboard
-- 💬 Customer Sentiment Analysis
+- 🤖 Predict product launch success using Machine Learning
+- 📊 Success Probability Score with Risk Level
 - 🔍 Explainable AI using SHAP
-- 📅 Sales Trend Forecasting
-- 📦 Product-specific launch recommendations
-- 📉 Performance monitoring after launch
+- 📈 Interactive dashboard with prediction history
+- 📦 Category-based product benchmarking
+- 💡 Product optimization recommendations
+- 🔐 Secure user authentication
+- 💾 Prediction history stored in PostgreSQL
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
-### Programming & Frameworks
-- Python
-- Streamlit
+### Frontend
+- React.js
+- Vite
+- React Router
+- Axios
+- Recharts
+- CSS
+
+### Backend
+- FastAPI
 - SQLAlchemy
+- PostgreSQL
+- JWT Authentication
 - Uvicorn
 
 ### Machine Learning
+- Python
 - Scikit-learn
 - XGBoost
 - Random Forest
 - Gradient Boosting
-
-### Data Analysis
+- SHAP
 - Pandas
 - NumPy
 
-### Visualization
-- Plotly
-- Matplotlib
+---
 
-### Explainable AI
-- SHAP
+## 📊 Machine Learning Pipeline
 
-### Database
-- PostgreSQL
+- Data Collection & Cleaning
+- Feature Engineering
+- Success Label Generation
+- Model Training
+- Ensemble Prediction
+- SHAP Explainability
+- Product Optimization
+- Dashboard Visualization
 
 ---
 
 ## 📂 Dataset
 
-The project uses the **Amazon Reviews 2023 Dataset** from McAuley Lab, including product metadata and customer reviews.
-
-The dataset contains information such as:
-
-- Product Details
-- Pricing
-- Categories
-- Product Features
-- Customer Ratings
-- Review History
-- Product Descriptions
+- **Source:** Amazon Reviews 2023 Dataset (McAuley Lab)
+- **Products:** ~12,000
+- **Reviews:** ~65,000
+- **Categories:** 280+
+- **Engineered Features:** 31
 
 ---
 
-## ⚙️ Project Workflow
+## 📈 Model Performance
 
-1. Data Collection
-2. Data Cleaning & Preprocessing
-3. Feature Engineering
-4. Exploratory Data Analysis (EDA)
-5. Machine Learning Model Training
-6. Product Success Prediction
-7. Explainable AI (SHAP)
-8. Dashboard Development
-9. Product Performance Monitoring
+| Metric | Score |
+|--------|-------|
+| Test AUC | **0.88** |
+| Accuracy | **86%** |
+| Precision | **0.84** |
+| Recall | **0.83** |
+| F1 Score | **0.83** |
 
 ---
 
-## 📈 Machine Learning Models
+# 📸 Screenshots
 
-- XGBoost Classifier
-- Random Forest Classifier
-- Gradient Boosting Classifier
-- Voting Classifier (Ensemble)
+## Landing Page
+
+![Landing Page](screenshots/front-page.png)
 
 ---
 
-## 📊 Key Features Engineered
+## Product Prediction
 
-- Product Price
-- Product Weight
-- Number of Features
-- Product Category
-- Brand Strength
-- Product Description Quality
-- Launch Month
-- Competition Score
-- Category Statistics
-- Feature Density
+![Prediction](screenshots/predict.png)
+
+---
+
+## Prediction Result
+
+![Result](screenshots/result.png)
+
+---
+
+## Prediction History
+
+![History](screenshots/prediction_history.png)
+
+---
+
+## Dashboard
+
+![Dashboard](screenshots/result2.png)
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/motorola128/LaunchIQ.git
+```
+
+### Backend
+
+```bash
+cd backend
+
+pip install -r requirements.txt
+
+uvicorn main:app --reload
+```
+
+### Frontend
+
+```bash
+cd frontend
+
+npm install
+
+npm run dev
+```
+
+---
+
+## 📁 Project Structure
+
+```
+LaunchIQ
+│
+├── backend
+│
+├── frontend
+│
+├── screenshots
+│
+├── google colab Notebooks
+│
+└── README.md
+```
 
 ---
 
@@ -108,52 +165,24 @@ The dataset contains information such as:
 
 - Machine Learning
 - Predictive Analytics
+- Explainable AI (SHAP)
 - Feature Engineering
 - Data Cleaning
-- Exploratory Data Analysis
-- Explainable AI (SHAP)
-- SQL & PostgreSQL
-- Business Intelligence
-- Dashboard Development
+- PostgreSQL
+- FastAPI
+- React.js
+- REST API Development
 - Data Visualization
+- Full Stack Development
 
 ---
 
-## 🚀 Future Enhancements
+## 🔮 Future Enhancements
 
-- Real-time market trend integration
+- Real-time product monitoring
+- Sales forecasting
 - Competitor analysis
-- Advanced forecasting models
+- Recommendation engine
 - Cloud deployment
-- REST API integration
 
 ---
-## 📸 Project Screenshots
-
-### 🏠 Landing Page
-
-![Landing Page](screenshots/frontpage.png)
-
----
-
-### 📊 Prediction Page
-
-![Prediction Page](screenshots/predict.png)
-
----
-
-### 📈 Prediction History
-
-![Prediction History](screenshots/prediction_history.png)
-
----
-
-### 🎯 Prediction Result
-![Detailed Result](screenshots/result2.png)
-
-
----
-
-### 📋 Detailed Prediction Result
-![Prediction Result](screenshots/result.png)
-
