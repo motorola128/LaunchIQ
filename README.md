@@ -124,14 +124,8 @@ The dataset contains information such as:
 - Real-time market trend integration
 - Competitor analysis
 - Advanced forecasting models
-- Recommendation engine
 - Cloud deployment
 - REST API integration
 
 ---
 
-
-
-GitHub: https://github.com/yourusername
-
-LinkedIn: https://linkedin.com/in/yourprofile
