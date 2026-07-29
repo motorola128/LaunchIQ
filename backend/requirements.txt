@@ -1,1 +1,2 @@
 category_encoders
+python-dotenv
