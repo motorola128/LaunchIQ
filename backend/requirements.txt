@@ -1,2 +1,14 @@
 category_encoders
 python-dotenv
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+python-jose
+passlib[bcrypt]
+scikit-learn
+pandas
+numpy
+xgboost
+joblib
+shap
