@@ -72,8 +72,11 @@ def predict(
     #     raise HTTPException(status_code=500, detail=f"ML Pipeline Engine Error: {str(e)}")
     except Exception as e:
         db.rollback()
-        print("ERROR:", e)
-        raise
+        print("PREDICTION ERROR:", e)
+        raise HTTPException(
+            status_code=500,
+            detail="Prediction engine failed. Check backend logs for details."
+        )
 
 
 
