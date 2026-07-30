@@ -5,7 +5,8 @@ uvicorn
 sqlalchemy
 psycopg2-binary
 python-jose
-passlib[bcrypt]
+passlib==1.7.4
+bcrypt==4.0.1
 scikit-learn==1.6.1
 pandas
 numpy
