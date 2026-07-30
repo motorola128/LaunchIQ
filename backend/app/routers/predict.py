@@ -67,9 +67,13 @@ def predict(
             "results": result
         }
 
+    # except Exception as e:
+    #     db.rollback()  # Rollback database state if anything goes wrong
+    #     raise HTTPException(status_code=500, detail=f"ML Pipeline Engine Error: {str(e)}")
     except Exception as e:
-        db.rollback()  # Rollback database state if anything goes wrong
-        raise HTTPException(status_code=500, detail=f"ML Pipeline Engine Error: {str(e)}")
+        db.rollback()
+        print("ERROR:", e)
+        raise
 
 
 
