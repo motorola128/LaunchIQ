@@ -8,8 +8,8 @@ python-jose
 passlib==1.7.4
 bcrypt==4.0.1
 scikit-learn==1.6.1
-pandas
-numpy
-xgboost==3.2.0
+pandas==2.2.2
+numpy==2.0.2
+xgboost==3.3.0
 joblib
 shap
