@@ -13,3 +13,4 @@ numpy==2.0.2
 xgboost==3.3.0
 joblib
 shap
+python-multipart
